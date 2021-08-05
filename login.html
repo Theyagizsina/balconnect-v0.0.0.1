@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap-Balconnet</title>
+    <!-- <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="./index.html"><img class="logo" src="/images/Logo.svg" ></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/Close menu.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Anasayfa</a></li>
+                    <li><a href="#">Özellikler</a></li> 
+                    <li><a href="#">SSS</a></li>
+                 </ul> 
+
+                 <ul class="secondary-nav">
+                    <li><a href="#">Bize Ulaşın</a></li>
+                    <li class="go-sign-in-cta"><a href="#">Giriş yap</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <section class="hero">
+        <div class="right-col">
+            <img src="images/app logo.svg" alt="Application logo">
+            <p class="subhead">Tamamen Yeni...</p>
+            <h1>Sadece Giriş Yaparak Yeni Sisteme Merhaba De!</h1>
+        </div>
+
+        <div class="container">
+            <div class="card login-card">
+              <div class="row no-gutters">
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <p class="login-card-description">Giriş Yap</p>
+                    <form action="#" id="frm1">
+                        <div class="form-group">
+                          <input type="text" name="tcNo" id="email" class="form-control" placeholder="T.C. Kimlik No" maxlength="11">
+                        </div>
+                        <div class="form-group mb-4">
+                          <input type="password" name="sifre" id="password" class="form-control" placeholder="***********">
+                        </div>
+                        <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login" onclick="myFunction()">
+                      </form>
+                      <a href="#!" class="forgot-password-link">Forgot password?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+            </ul>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    
+    <script>
+        function myFunction() {
+        document.getElementById("frm1").submit();
+         var name = document.getElementById('email').value;
+         var pass = document.getElementById('password').value;
+        //  var first = name.slice(0,1);
+        //  var last = name.slice(1);
+        //  name = first.toUpperCase()+last.toLowerCase();
+
+
+         if (name == "10144699756", pass == '2kere24etmeZ') {
+             var kisi = "Sina";
+            alert("Merhaba, " + kisi + ". " + "Balconnect'te Hoşgeldin.");
+            location.href = "./startbootstrap-sb-admin-2-master/index.html";
+         }
+         else
+             alert("Hatalı Giriş yaptın");
+        }
+        
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    
+
+</body>
+</html>

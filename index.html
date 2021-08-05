@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balconnet</title>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#"><img class="logo" src="/images/Logo.svg" ></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/Close menu.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Anasayfa</a></li>
+                    <li><a href="#">Özellikler</a></li> 
+                    <li><a href="#">SSS</a></li>
+                 </ul> 
+
+                 <ul class="secondary-nav">
+                    <li><a href="#">Bize Ulaşın</a></li>
+                    <li class="go-sign-in-cta"><a href="login.html">Giriş yap</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <img src="images/app logo.svg" alt="Application logo">
+                <p class="subhead">It's Nistty &amp; Gritty</p>
+                <h1>A Task App That Do Make Anything</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Şimdi Dene</a>
+                    <a href="#" class="watch-video-cta">
+                        <img class="video-cta" src="images/videocam.svg" alt="Watch a video">Videoyu izle
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/uglythingh.svg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Dijital dönüşüm</li>
+                <li>Okulu dijitale taşıyoruz</li>
+                <li>Modern ve esnek tasarım</li>
+                <li>Anlık öğrenci takibi ve erişimi</li>
+                <li>Öğretmenler için anlık iletişim</li>
+                <li>Ve daha fazlası Balconnect'te</li>
+            </ul>
+
+            <img src="images/kid.png" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="teachers-review-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/images/person.png" alt="red head person">
+                    <blockquote>"deneme yapiyoruz loram implus yok veya ne uise isrsdgfjbdfgu sdasdas sadasd sdasdsdsdasd dfgdofgdfgdfgdf"</blockquote>
+                    <cite>- Ayşe Özmen <br><span>Fizik Öğretmeni</span></cite>
+                </li>
+                <li>
+                    <img src="/images/person.png" alt="red head person">
+                    <blockquote>"deneme yapiyoruz loram implus yok veya ne uise isrsdgfjbdfgu sdasdas sadasd sdasdsdsdasd dfgdofgdfgdfgdf"</blockquote>
+                    <cite>- Ayşe Özmen <br><span>Fizik Öğretmeni</span></cite>
+                </li>
+                <li>
+                    <img src="/images/person.png" alt="red head person">
+                    <blockquote>"deneme yapiyoruz loram implus yok veya ne uise isrsdgfjbdfgu sdasdas sadasd sdasdsdsdasd dfgdofgdfgdfgdf"</blockquote>
+                    <cite>- Ayşe Özmen <br><span>Fizik Öğretmeni</span></cite>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+
+</body>
+</html>
